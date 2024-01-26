@@ -4,8 +4,8 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className="max-w-[180px] border rounded-md border-gray-500 sm:px-5 px-2">
-      <div className="flex items-center justify-center py-3 border-b-2 border-gray-400">
+    <div className="max-w-[180px] border-2 border-solid shadow-2xl rounded-md border-zinc-800  sm:px-5 px-2">
+      <div className="flex items-center justify-center py-3 border-b-2 border-zinc-800">
         <a href="#">
           <Image
             className="rounded-t-lg"
