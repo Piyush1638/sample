@@ -1,4 +1,4 @@
-import React from "react";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="self-stretch max-md:max-w-full">
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
             <div className="flex flex-col items-stretch w-3/12 max-md:w-full max-md:ml-0">
-              <div className="flex grow flex-col items-stretch max-md:mt-8">
+              <div className="flex grow flex-col mf:items-start items-center mf:text-start text-center max-md:mt-8">
                 <div className="flex items-stretch justify-between gap-3">
                   <img
                     loading="lazy"
@@ -46,8 +46,8 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
-              <div className="flex flex-col text-sm text-neutral-400 pb-3 items-start max-md:mt-7">
+            <div className="flex flex-col items-center  w-3/12 ml-5 max-md:w-full max-md:ml-0">
+              <div className="flex flex-col items-center text-center text-sm text-neutral-400 pb-3 mf:items-start max-md:mt-7">
                 <div className="text-white text-xl font-semibold leading-7 self-stretch">
                   Additional Links
                 </div>
@@ -62,7 +62,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
-              <div className="items-stretch flex flex-col text-sm text-neutral-400 whitespace-nowrap pr-4 py-px max-md:mt-7">
+              <div className="mf:items-stretch flex flex-col items-center text-center text-sm text-neutral-400 whitespace-nowrap pr-4 py-px max-md:mt-7">
                 <div className="text-white text-xl font-semibold leading-7">
                   Documents
                 </div>
@@ -72,14 +72,14 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0">
-              <div className="flex flex-col items-start max-md:mt-7">
+              <div className="flex flex-col items-center mf:items-start max-md:mt-7">
                 <div className="text-white text-xl font-semibold leading-7">
                   Subscribe
                 </div>
                 <div className="text-neutral-400 text-sm leading-7 whitespace-nowrap mt-3">
                   Will send you monthly updates.
                 </div>
-                <div className="border border-[color:var(--Dark-Stroke,#424242)] bg-zinc-900 bg-opacity-70 self-stretch flex w-full items-stretch justify-between gap-5 mt-5 px-5 py-px rounded-lg border-solid">
+                {/* <div className="border border-[color:var(--Dark-Stroke,#424242)] bg-zinc-900 bg-opacity-70 self-stretch flex w-full items-stretch justify-between gap-5 mt-5 px-5 py-px rounded-lg border-solid">
                   <div className="text-neutral-200 text-opacity-70 text-sm my-auto">
                     Your e-mail...
                   </div>
@@ -91,15 +91,27 @@ const Footer = () => {
                       className="aspect-square object-contain object-center w-5 overflow-hidden shrink-0 max-w-full my-auto"
                     />
                   </div>
+                </div> */}
+                <div className="bg-transparent w-full border rounded-lg flex items-center flex-row relative">
+                  <div className="px-2 py-3">
+                    <input
+                      type="text"
+                      placeholder="Your e-mail..."
+                      className="bg-transparent outline-none text-white"
+                    />
+                  </div>
+                  <button className="h-full w-full text-white relative border-l">
+                  <IoIosArrowRoundForward className="w-full text-3xl"/>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="text-white text-xl font-semibold leading-7 ml-40 mt-2.5">
+        <div className="text-white text-xl font-semibold leading-7  mt-2.5">
           Contact us
         </div>
-        <div className="text-lime-400 text-sm leading-7 whitespace-nowrap ml-40 mt-3">
+        <div className="text-lime-400 text-sm leading-7 whitespace-nowrap  mt-3">
           <span className="">You can contact us at: </span>
           <span className="text-lime-400">mint@hulkcars.com</span>
         </div>

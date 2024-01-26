@@ -15,6 +15,9 @@ module.exports = {
       colors:{
         "primary": "#1d1e21",
         "navlinks": "#2a2b2d",
+      },
+      screens:{
+        "mf": "1200px"
       }
     },
   },
